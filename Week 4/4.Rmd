@@ -1,10 +1,10 @@
 ---
+author: 'Esben Kran'
 title: 'Week 4: R assignment'
-author: "Esben Kran"
 date: '2021-09-21'
 ---
 
-*Packages*
+Packages
 ```{r}
 pacman::p_load(tidyverse)
 ```
@@ -61,4 +61,7 @@ c) the file structure of your R project in the bottom right "Files" pane.
 Save the screenshot as an image and put it in your AUID_lastname_firstname repository inside our Github organisation (github.com/Digital-Methods-HASS) or equivalent. Place here the URL leading to the screenshot in your repository.
 
 This is an image from a web URL:
-![you can get this instead](https://www.google.com/url?sa=i&url=https%3A%2F%2Fhighhouse.dk%2Fshop%2Faskebaeger-happy-cat-3994p.html&psig=AOvVaw1FOnq_m8XY1sHzNBDjrBNs&ust=1632300170728000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNi1iJLWj_MCFQAAAAAdAAAAABAD)
+
+![cat time](https://desenio.dk/bilder/artiklar/zoom/8684_2.jpg?imgwidth=435)
+
+End of document
