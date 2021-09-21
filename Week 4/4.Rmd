@@ -1,0 +1,64 @@
+---
+title: 'Week 4: R assignment'
+author: "Esben Kran"
+date: '2021-09-21'
+---
+
+*Packages*
+```{r}
+pacman::p_load(tidyverse)
+```
+
+
+For this assignment, please answer the following three questions showing your code and results and then take a particular screenshot of your working environment. You can upload here (to Brightspace) the code and the URL to the screenshot OR submit everything to Github and submit here a single link to your repository.
+
+
+1) Use R to figure out how many elements in the vector below are greater than 2.
+
+
+```{r}
+rooms <- c(1, 2, 1, 3, 1, NA, 3, 1, 3, 2, 1, NA, 1, 8, 3, 1, 4, NA, 1, 3, 1, 2, 1, 7, 1, NA)
+rooms[rooms>2 & !is.na(rooms)]
+```
+
+2) What type of data is in the 'rooms' vector? 
+
+*The `rooms` vector contains numbers between 1 and 8 as well as `NA` which means `not available`. This is equivalent to not having any value.*
+
+3) What is the result of running the median() function on the above 'rooms' vector?
+
+```{r}
+rooms %>% 
+  median(na.rm=T)
+```
+It is `NA`. To avoid becoming `NA` and actually get the median, we use the `median` function with `na.rm=TRUE` to remove all `NA`s from the list.
+
+
+4) Submit the following image to Github: Inside your R Project (.Rproj), install the 'tidyverse' package and use the download.file() and read_csv() function to read the SAFI_clean.csv dataset into your R project as 'interviews' digital object (see instructions in https://datacarpentry.org/r-socialsci/setup.html and 'Starting with Data' section). Take a screenshot of your RStudio interface showing
+
+a) the line of code you used to create the object
+
+```{r}
+
+download.file("https://raw.githubusercontent.com/yorkulibraries/rworkshop/master/SAFI_clean.csv",
+              "interviews.csv")
+
+interviews <- read_csv("interviews.csv")
+
+interviews
+
+```
+
+b) the 'interviews' object in the Environment, and
+
+`interviews: 131 obs. of 14 variables`
+
+c) the file structure of your R project in the bottom right "Files" pane.
+
+`4.Rmd`
+`interviews.csv`
+
+Save the screenshot as an image and put it in your AUID_lastname_firstname repository inside our Github organisation (github.com/Digital-Methods-HASS) or equivalent. Place here the URL leading to the screenshot in your repository.
+
+This is an image from a web URL:
+![you can get this instead](https://www.google.com/url?sa=i&url=https%3A%2F%2Fhighhouse.dk%2Fshop%2Faskebaeger-happy-cat-3994p.html&psig=AOvVaw1FOnq_m8XY1sHzNBDjrBNs&ust=1632300170728000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNi1iJLWj_MCFQAAAAAdAAAAABAD)
