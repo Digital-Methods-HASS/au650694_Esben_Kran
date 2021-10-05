@@ -22,14 +22,14 @@ library(pacman);p_load(tidyverse, circlize, dplyr, tidytext, topicmodels, tm, pl
 ```{r}
 p_load(showtext)
 windows()
-font_add("Euclid Flex", "C:/Users/esben/AppData/Local/Microsoft/Windows/Fonts/EuclidFlex-Regular.otf")
-font_add("Euclid Flex Bold", "C:/Users/esben/AppData/Local/Microsoft/Windows/Fonts/EuclidFlex-Bold.otf")
+# font_add("Euclid Flex", "C:/Users/esben/AppData/Local/Microsoft/Windows/FontsC:/Users/esben/AppData/Local/Microsoft/Windows/Fonts/EuclidFlex-Regular.otf")
+# font_add("Euclid Flex Bold", "C:/Users/esben/AppData/Local/Microsoft/Windows/Fonts/EuclidFlex-Bold.otf")
 showtext_auto()
 
 theme_dgsb_light = 
   theme_minimal() +
   theme(
-    text = element_text(family = "Euclid Flex"),
+    # text = element_text(family = "Euclid Flex"),
     plot.margin = unit(rep(1, 4), "cm"),
     plot.title = element_text(size = 18, 
                               family = "Euclid Flex Bold",
